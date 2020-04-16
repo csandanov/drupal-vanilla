@@ -1,0 +1,11 @@
+version: 0.1
+
+env:
+  FOO: bar
+
+jobs:
+  db-update:
+    env:
+      FOO: bar2
+    steps:
+    - run: drush updb
